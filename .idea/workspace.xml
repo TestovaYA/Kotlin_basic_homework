@@ -4,34 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e07c77f-f716-4bf3-bdcd-f727e703ef7b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hw2/Task-1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hw2/Task-2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hw2/Task-3.md" afterDir="false" />
+    <list default="true" id="3e07c77f-f716-4bf3-bdcd-f727e703ef7b" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/docs/hw2/Task-1.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/hw2/Task1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hw2/Task2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hw2/Task3.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hw3/Task-1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hw3/Task-2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hw3/Task-3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hw3/Task1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hw3/Task2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hw3/Task3.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +23,18 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -58,6 +47,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -73,19 +65,25 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Yulia/IdeaProjects/Kotlin_basic_homework/src/main/kotlin/hw3"
+    "last_opened_file_path": "C:/Users/Yulia/IdeaProjects/Kotlin_basic_homework/src/main/kotlin/hw2"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Yulia\IdeaProjects\Kotlin_basic_homework\src\main\kotlin\hw3" />
       <recent name="C:\Users\Yulia\IdeaProjects\Kotlin_basic_homework\src\main\kotlin\hw2" />
-      <recent name="C:\Users\Yulia\IdeaProjects\Kotlin_basic_homework\src\main\kotlin\HW2" />
+      <recent name="C:\Users\Yulia\IdeaProjects\Kotlin_basic_homework\docs\hw2" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Task3Kt">
+  <component name="RunManager" selected="Kotlin.Task2Kt">
     <configuration name="Task1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hw2.Task1Kt" />
+      <module name="Kotlin_basic_homework.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task2Kt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task2Kt" />
       <module name="Kotlin_basic_homework.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,8 +106,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.Task3Kt" />
-        <item itemvalue="Kotlin.MainTask2Kt" />
-        <item itemvalue="Kotlin.MainTask1Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -122,6 +118,14 @@
       <option name="presentableId" value="Default" />
       <updated>1665681930457</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1665682731835</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665682731835</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,5 +138,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>
