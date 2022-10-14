@@ -74,7 +74,7 @@
       <recent name="C:\Users\Yulia\IdeaProjects\Kotlin_basic_homework\docs\hw2" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Task2Kt">
+  <component name="RunManager" selected="Kotlin.Task3Kt">
     <configuration name="Task1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hw2.Task1Kt" />
       <module name="Kotlin_basic_homework.main" />
@@ -105,9 +105,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Task3Kt" />
         <item itemvalue="Kotlin.Task2Kt" />
         <item itemvalue="Kotlin.Task1Kt" />
-        <item itemvalue="Kotlin.Task3Kt" />
       </list>
     </recent_temporary>
   </component>
