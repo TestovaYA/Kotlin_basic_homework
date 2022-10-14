@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e07c77f-f716-4bf3-bdcd-f727e703ef7b" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/docs/hw2/Task-1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hw2/Task1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3e07c77f-f716-4bf3-bdcd-f727e703ef7b" name="Changes" comment="homework3 task2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,16 +60,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Yulia/IdeaProjects/Kotlin_basic_homework/src/main/kotlin/hw2"
+    "last_opened_file_path": "C:/Users/Yulia/IdeaProjects/Kotlin_basic_homework/src/main/kotlin/hw3"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Yulia\IdeaProjects\Kotlin_basic_homework\src\main\kotlin\hw3" />
+      <recent name="C:\Users\Yulia\IdeaProjects\Kotlin_basic_homework\docs\hw3" />
       <recent name="C:\Users\Yulia\IdeaProjects\Kotlin_basic_homework\src\main\kotlin\hw2" />
       <recent name="C:\Users\Yulia\IdeaProjects\Kotlin_basic_homework\docs\hw2" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Task1Kt (1)">
+  <component name="RunManager" selected="Kotlin.Task2Kt (1)">
     <configuration name="Task1Kt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hw3.Task1Kt" />
       <module name="Kotlin_basic_homework.main" />
@@ -112,6 +109,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Task2Kt (1)" />
         <item itemvalue="Kotlin.Task1Kt (1)" />
         <item itemvalue="Kotlin.Task3Kt" />
         <item itemvalue="Kotlin.Task2Kt" />
@@ -135,7 +133,42 @@
       <option name="project" value="LOCAL" />
       <updated>1665682731835</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="homework2 task1">
+      <created>1665762021656</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665762021656</updated>
+    </task>
+    <task id="LOCAL-00003" summary="homework2 task2">
+      <created>1665762067261</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665762067261</updated>
+    </task>
+    <task id="LOCAL-00004" summary="homework2 task3">
+      <created>1665762115097</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665762115097</updated>
+    </task>
+    <task id="LOCAL-00005" summary="homework3 task1">
+      <created>1665762241317</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665762241317</updated>
+    </task>
+    <task id="LOCAL-00006" summary="homework3 task2">
+      <created>1665762301118</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665762301118</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,6 +184,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="homework2 task1" />
+    <MESSAGE value="homework2 task2" />
+    <MESSAGE value="homework2 task3" />
+    <MESSAGE value="homework3 task1" />
+    <MESSAGE value="homework3 task2" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework3 task2" />
   </component>
 </project>
