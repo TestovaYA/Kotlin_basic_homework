@@ -6,11 +6,11 @@ fun main() {
     val scanner = Scanner(System.`in`)
     println("Введите числа через пробел: ")
 
-    val list = scanner.nextLine().split(" ").map { it.toInt() }.sorted()
+    val list = scanner.nextLine().split(" ").map { it.toInt() }
 
-    val min = list.first()
-    val max = list.last()
-    val avg = list[list.size / 2]  //"среднее" == из середины отсортированного массива
+    val min = list.minOrNull()
+    val max = list.maxOrNull()
+    val avg = list.average()
 
     println("$min $avg $max")
 }
