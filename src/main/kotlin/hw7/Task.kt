@@ -1,8 +1,8 @@
 package hw7
 
 class Fractian(
-    var numenator: Int,
-    var denumenator: Int
+    var numenator: Long,
+    var denumenator: Long
 ) {
     fun plus(other: Fractian): Fractian {
         return if (this.denumenator == other.denumenator) {
@@ -35,10 +35,10 @@ class Fractian(
     }
 
     //вычисление НОД
-    private fun findNOD(first: Int, second: Int): Int {
+    private fun findNOD(first: Long, second: Long): Long {
         var a = first
         var b = second
-        while (b != 0) {
+        while (b != 0L) {
             val tmp = a % b
             a = b
             b = tmp
@@ -47,7 +47,7 @@ class Fractian(
     }
 
     //вычисление НОК
-    private fun findNOK(first: Int, second: Int): Int {
+    private fun findNOK(first: Long, second: Long): Long {
         return first * second / findNOD(first, second)
     }
 
@@ -68,8 +68,8 @@ class Fractian(
     }
 
     override fun hashCode(): Int {
-        var result = numenator
-        result = 31 * result + denumenator
+        var result = numenator.hashCode()
+        result = 31 * result + denumenator.hashCode()
         return result
     }
 
