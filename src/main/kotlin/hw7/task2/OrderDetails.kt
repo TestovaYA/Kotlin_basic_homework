@@ -1,8 +1,9 @@
 package hw7.task2
 
-class OrderDetails(items: List<OrderItem>) {
-    val items = null
-    var location: String? = null
+class OrderDetails(
+    private val items: List<OrderItem>,
+    private val location: String
+) {
 
     fun calcPrice() = 7
     fun calcWeight() = 6
