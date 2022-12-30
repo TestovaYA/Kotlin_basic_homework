@@ -57,17 +57,17 @@ class SqlDslUnitTest {
      *  - for numbers - "="
      *  - for null - "is"
      */
-//    @Test
-//    fun `select with complex where condition with one condition`() {
-//        val expected = "select * from table where col_a = 'id'"
-//
-//        val real = query {
-//            from("table")
-//            where { "col_a" eq "id" }
-//        }
-//
-//        checkSQL(expected, real)
-//    }
+    @Test
+    fun `select with complex where condition with one condition`() {
+        val expected = "select * from table where col_a = 'id'"
+
+        val real = query {
+            from("table")
+            where { "col_a" eq "id" }
+        }
+
+        checkSQL(expected, real)
+    }
 
     /**
      * __nonEq__ is "non equals" function. Must be one of chars:
@@ -75,19 +75,19 @@ class SqlDslUnitTest {
      *  - for numbers - "!="
      *  - for null - "!is"
      */
-//    @Test
-//    fun `select with complex where condition with two conditions`() {
-//        val expected = "select * from table where col_a != 0"
-//
-//        val real = query {
-//            from("table")
-//            where {
-//                "col_a" nonEq 0
-//            }
-//        }
-//
-//        checkSQL(expected, real)
-//    }
+    @Test
+    fun `select with complex where condition with two conditions`() {
+        val expected = "select * from table where col_a != 0"
+
+        val real = query {
+            from("table")
+            where {
+                "col_a" nonEq 0
+            }
+        }
+
+        checkSQL(expected, real)
+    }
 
 //    @Test
 //    fun `when 'or' conditions are specified then they are respected`() {
