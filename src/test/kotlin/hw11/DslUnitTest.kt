@@ -107,7 +107,7 @@ class SqlDslUnitTest {
 //    }
 
 //    @Test
-//    fun `when 'or' conditions are specified then they are respected`() {
+//    fun `when 'and' conditions are specified then they are respected`() {
 //        val expected = "select (first_par, second_par) from table where (col_a = 4 and col_b !is null)"
 //
 //        val real = query {
