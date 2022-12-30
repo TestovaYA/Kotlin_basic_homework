@@ -27,11 +27,11 @@ fun main() {
         for (j in 1..n) {
             for (w in 1..needed) {
                 val el1 = dp[w][j - 1]
-                val el2 = dp[w - weights[j - 1]][j - 1] + costs[j - 1]
-
-                val el2Cost = costs[j - 1]
 
                 if (weights[j - 1] <= w) {
+                    val el2Cost = costs[j - 1]
+                    val el2 = dp[w - weights[j - 1]][j - 1]
+
                     dp[w][j] = Math.max(el1, el2 + el2Cost)
                 } else {
                     dp[w][j] = el1
@@ -48,10 +48,11 @@ fun main() {
         for (j in 1..n) {
             for (w in 1..needed) {
                 val el1 = dp[w][j - 1]
-                val el2 = dp[w - weightsF(j - 1)][j - 1] + costsF(j - 1)
-                val el2Cost = costsF(j - 1)
 
                 if (weightsF(j - 1) <= w) {
+                    val el2 = dp[w - weightsF(j - 1)][j - 1]
+                    val el2Cost = costsF(j - 1)
+
                     dp[w][j] = max(el1, el2 + el2Cost)
                 } else {
                     dp[w][j] = el1
