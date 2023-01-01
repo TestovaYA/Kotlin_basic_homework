@@ -16,7 +16,6 @@ fun main() {
         println(now())
         F()
         println(now())
-        return F()
     }
     MAIN_F(lambdaFunction)
 
