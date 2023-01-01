@@ -43,9 +43,9 @@ open class Line(var a: Point, var b: Point) {
         return Line(pointA, pointB)
     }
 
-    fun rotate90(dir: Int) =
-        if (dir >= 0) Line(Point(-a.getY(), a.getX()), Point(-b.getY(), b.getX()))
-        else Line(Point(a.getY(), -a.getX()), Point(b.getY(), -b.getX()))
+    open fun rotate90(dir: Int) =
+        if (dir >= 0) Line(Point(a.getX(), -a.getY()), Point(b.getX(), -b.getY()))
+        else Line(Point(-a.getX(), a.getY()), Point(-b.getX(), b.getY()))
 
     /**
      * Точка принадлежит отрезку, если сумма расстояний от этой точки до конечных точек отрезка равна длине отрезка.

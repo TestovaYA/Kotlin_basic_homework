@@ -69,4 +69,8 @@ class BrokenCurve(a: Point, b: Point, val c: Point) : Line(a, b) {
 
         return BrokenCurve(pointA, pointB, pointC)
     }
+
+    override fun rotate90(dir: Int) =
+        if (dir >= 0) BrokenCurve(Point(a.getX(), -a.getY()), Point(b.getX(), -b.getY()), Point(c.getX(), -c.getY()))
+        else BrokenCurve(Point(-a.getX(), a.getY()), Point(-b.getX(), b.getY()), Point(-c.getX(), c.getY()))
 }
