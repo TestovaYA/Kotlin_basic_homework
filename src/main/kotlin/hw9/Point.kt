@@ -4,6 +4,19 @@ import kotlin.math.pow
 import kotlin.math.sqrt
 
 class Point(initX: Double = 0.0, initY: Double = 0.0) {
+    companion object {
+        fun compareX(a: Point, b: Point) =
+            if (a.x > b.x) 1
+            else if (a.x == b.x) 0
+            else -1
+        fun compareY(a: Point, b: Point) =
+            if (a.y > b.y) 1
+            else if (a.y == b.y) 0
+            else -1
+
+        fun distanceSq(a: Point, b: Point) = (a.x - b.x).pow(2) + (a.y - b.y).pow(2)
+        fun distance(a: Point, b: Point) = sqrt(distanceSq(a, b))
+    }
 
     private var x: Double
     private var y: Double
@@ -16,21 +29,7 @@ class Point(initX: Double = 0.0, initY: Double = 0.0) {
     fun getX() = x
     fun getY() = y
 
-    fun compareX(a: Point, b: Point) =
-        if (a.x > b.x) 1
-        else if (a.x == b.x) 0
-        else -1
-
-    fun compareY(a: Point, b: Point) =
-        if (a.y > b.y) 1
-        else if (a.y == b.y) 0
-        else -1
-
-    fun distanceSq(a: Point, b: Point) = (a.x - b.x).pow(2) + (a.y - b.y).pow(2)
-
     fun distanceSq(other: Point) = (this.x - other.x).pow(2) + (this.y - other.y).pow(2)
-
-    fun distance(a: Point, b: Point) = sqrt(distanceSq(a, b))
 
     fun distance(p: Point) = sqrt(distanceSq(p))
 
