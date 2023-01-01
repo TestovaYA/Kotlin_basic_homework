@@ -4,7 +4,7 @@ import kotlin.math.atan2
 import kotlin.math.cos
 import kotlin.math.sin
 
-open class Line(var a: Point, var b: Point) {
+open class Line(val a: Point, val b: Point) {
 
     constructor(x1: Double, y1: Double, x2: Double, y2: Double) : this(Point(x1, y1), Point(x2, y2))
     constructor(line: Line) : this(line.a, line.b)
