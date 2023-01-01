@@ -31,7 +31,7 @@ open class Line(var a: Point, var b: Point) {
      * аналогично вычисляем точку b1
      * строим линию (a1, b1)
      */
-    fun rotate(degrees: Double): Line {
+    open fun rotate(degrees: Double): Line {
         val angleA = atan2(a.getY(), a.getX())
         val lenA = Point(0.0, 0.0).distance(Point(a.getX(), a.getY()))
         val pointA = Point(lenA * cos(angleA + degrees), lenA * sin(angleA + degrees))

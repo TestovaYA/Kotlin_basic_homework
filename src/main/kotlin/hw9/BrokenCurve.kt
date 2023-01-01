@@ -44,5 +44,29 @@ class BrokenCurve(a: Point, b: Point, val c: Point) : Line(a, b) {
         return (ao + ob == lengthAB) || (ob + oc == lengthBC)
     }
 
-    //остальные методы отработают по наследованию от родителя
+    /**
+     * поворачиваем относительно (0,0)
+     * каждую точку a, b, c будем поворачивать на новый угол относительно (0,0) - два вектора 0a, 0b, 0c
+     * для каждого вектора:
+     * - найти угол a0x
+     * - вычислить расстояние от 0 до a
+     * - переносим точку a - точка a1 = (lenA * cos(старый угол + новый), lenA * sin(старый угол + новый))
+     * аналогично вычисляем точку b1 и c1
+     * строим BrokenCurve по точкам a1, b1, c1
+     */
+    override fun rotate(degrees: Double): BrokenCurve {
+        val angleA = atan2(a.getY(), a.getX())
+        val lenA = Point(0.0, 0.0).distance(Point(a.getX(), a.getY()))
+        val pointA = Point(lenA * cos(angleA + degrees), lenA * sin(angleA + degrees))
+
+        val angleB = atan2(b.getY(), b.getX())
+        val lenB = Point(0.0, 0.0).distance(Point(b.getX(), b.getY()))
+        val pointB = Point(lenB * cos(angleB + degrees), lenB * sin(angleB + degrees))
+
+        val angleC = atan2(c.getY(), c.getX())
+        val lenC = Point(0.0, 0.0).distance(Point(c.getX(), c.getY()))
+        val pointC = Point(lenC * cos(angleC + degrees), lenC * sin(angleC + degrees))
+
+        return BrokenCurve(pointA, pointB, pointC)
+    }
 }
