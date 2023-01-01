@@ -25,5 +25,24 @@ class BrokenCurve(a: Point, b: Point, val c: Point) : Line(a, b) {
         return "Line : (x=$a.x, y=$a.y) - (x=$b.x, y=$b.y) - (x=$c.x, y=$c.y)"
     }
 
+    /**
+     * Точка принадлежит отрезку, если сумма расстояний от этой точки до конечных точек отрезка равна длине отрезка.
+     * проверяем оба отрезка
+     * ao + ob = ab
+     * bo + oc = bc
+     */
+    override fun isOnLine(o: Point): Boolean {
+        if (this.a == o || this.b == o || this.c == o) return true
+
+        val ao = a.distance(o)
+        val ob = b.distance(o)
+        val oc = c.distance(o)
+
+        val lengthAB = a.distance(b)
+        val lengthBC = b.distance(c)
+
+        return (ao + ob == lengthAB) || (ob + oc == lengthBC)
+    }
+
     //остальные методы отработают по наследованию от родителя
 }

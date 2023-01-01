@@ -47,10 +47,19 @@ open class Line(var a: Point, var b: Point) {
         if (dir >= 0) Line(Point(-a.getY(), a.getX()), Point(-b.getY(), b.getX()))
         else Line(Point(a.getY(), -a.getX()), Point(b.getY(), -b.getX()))
 
-    fun isOnLine(a: Point) =
-        if (this.a == a) true
-        else angle() == Line(this.a, a).angle()
+    /**
+     * Точка принадлежит отрезку, если сумма расстояний от этой точки до конечных точек отрезка равна длине отрезка.
+     * ac + cb = ab
+     */
+    open fun isOnLine(c: Point): Boolean {
+        if (this.a == c || this.b == c) return true
 
+        val ac = a.distance(c)
+        val cb = b.distance(c)
+        val length = a.distance(b)
+
+        return ac + cb == length
+    }
 
     fun isOnLine(x: Double, y: Double) = isOnLine(Point(x, y))
 

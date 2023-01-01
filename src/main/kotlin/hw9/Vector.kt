@@ -18,5 +18,9 @@ class Vector(b: Point) : Line(Point(0.0, 0.0), b) {
 
     fun setZero() = Line(0.0, 0.0, 0.0, 0.0)
 
+    override fun isOnLine(a: Point) =
+        if (this.a == a) true
+        else angle() == Line(this.a, a).angle()
+
     //остальные методы отработают по наследованию от родителя
 }
