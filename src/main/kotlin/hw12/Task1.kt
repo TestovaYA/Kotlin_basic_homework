@@ -3,10 +3,10 @@ package hw12
 import java.io.File
 import java.util.*
 
+const val FILE_PATH = "docs/hw12/files.txt"
+
 fun main() {
     val listOfFiles = mutableMapOf<String, List<String>>()
-    val FILE_PATH = "docs/hw12/files.txt"
-
     File(FILE_PATH).forEachLine {
         if (it.contains(" - ")) {
             val substrings = it.split(" - ")
