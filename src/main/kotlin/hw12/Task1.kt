@@ -5,8 +5,9 @@ import java.util.*
 
 fun main() {
     val listOfFiles = mutableMapOf<String, List<String>>()
+    val FILE_PATH = "docs/hw12/files.txt"
 
-    File("docs/hw12/files.txt").forEachLine {
+    File(FILE_PATH).forEachLine {
         if (it.contains(" - ")) {
             val substrings = it.split(" - ")
             val key = substrings[0]
