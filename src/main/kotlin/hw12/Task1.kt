@@ -5,25 +5,16 @@ import java.util.*
 
 const val FILE_PATH = "docs/hw12/files.txt"
 
+val filesWithOperations = mutableMapOf<String, List<String>>()
+
 fun main() {
-    val listOfFiles = mutableMapOf<String, List<String>>()
-    File(FILE_PATH).forEachLine {
-        if (it.contains(" - ")) {
-            val substrings = it.split(" - ")
-            val key = substrings[0]
-            val values = substrings[1].split(",")
-
-            listOfFiles[key] = values
-        } else {
-            listOfFiles[it] = emptyList()
-        }
-    }
-
     val scanner = Scanner(System.`in`)
     println("Введите имя файла: ")
     val fileName = scanner.nextLine()
 
-    if (!listOfFiles.contains(fileName)) {
+    fillFilesWithOperations()
+
+    if (!filesWithOperations.contains(fileName)) {
         println("Файл с таким названием не найден.")
         return
     }
@@ -31,7 +22,23 @@ fun main() {
     println("Введите название операции: ")
     val operation = scanner.nextLine()
 
-    if (listOfFiles.getValue(fileName).contains(operation)) println("Для файла $fileName операция $operation доступна")
+    if (filesWithOperations.getValue(fileName).contains(operation)) println("Для файла $fileName операция $operation доступна")
     else println("У пользователя нет доступа для совершения операции $operation")
 
+}
+
+fun fillFilesWithOperations(): MutableMap<String, List<String>> {
+    File(FILE_PATH).forEachLine {
+        if (it.contains(" - ")) {
+            val substrings = it.split(" - ")
+            val filename = substrings[0]
+            val permissions = substrings[1].split(",")
+
+            filesWithOperations[filename] = permissions
+        } else {
+            filesWithOperations[it] = emptyList()
+        }
+    }
+
+    return filesWithOperations
 }
